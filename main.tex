@@ -1,49 +1,47 @@
-\documentclass{report}
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
-
-\title{SOFTWARE ENGINEERING PROCESS-2}
-
-\author{KOTESWARA RAO PANCHUMARTHY 40084998 }
-\date{July 2019}
-
-
-
-
+\usepackage{graphicx}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage{hyperref}
+\usepackage{fontenc}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\usepackage{titling}
+\usepackage{pgfplots}
+\usepackage{subfig}
+\setlength{\topskip}{0mm}
+\setlength{\droptitle}{-8em} 
+\title{{\large \textbf{CONCORDIA UNIVERSITY \\ DEPARTMENT OF COMPUTER SCIENCE AND SOFTWARE ENGINEERING \\ SOEN 6011: SOFTWARE ENGINEERING PROCESS: SUMMER 2019 \\ DELIVERABLE 1: OPEN PROBLEMS}}}
+\author{\normalsize \textbf {STUDENT NAME: MANUSHREE MALLARAJU } \\ \normalsize \textbf{STUDENT IDENTIFICATION NUMBER: 40082236 }}
+\date{}
 \begin{document}
-
 \maketitle
+\section*{{\normalsize PROBLEM T1-OP5. Source(s): “Give a brief description, not exceeding one page, of your function, including the domain and co-domain of function, and the characteristics that make it unique. To ensure that you have attained sufficient background, Test 1 will have a problem related to your function.” }}
 
-\section*{Requirements:}
-\section*{1:}
-\begin{itemize}
-  \item ID			:FR1
-  \item TYPE		:Functional Requirement
-  \item VERSION		:1.0
-  \item DIFFICULTY	:Easy
-  \item DESCRIPTION	: •	When  a = 0  or  b = 0  the function simplifies to  y = f(x) = 0 , or a trivial constant function whose output is  0  for every input. So all the values of ‘a’  should greater then 1 i.e., a$>$0
-  \item RATIONALE   :a$\neq$0
-\end{itemize}
-\section*{2:}
-\begin{itemize}
-  \item ID			:FR2
-  \item TYPE		:Functional Requirement
-  \item VERSION		:1.0
-  \item DIFFICULTY	:Easy
-  \item DESCRIPTION	: When  b = 1  the function simplifies to  y = f(x) = $a1^x$ = a1 = a , or a constant function whose output is  ‘a’  for every input. so all the values of b should be greater than 1 i.e.b$>$1
-  \item RATIONALE   :b$\neq$1
-\end{itemize}
+\section*{\normalsize \textbf{INTRODUCTION}}
+The exponential function \( ab^x \)is one of the power rules of math, which involves an exponent. This exponent is represented with a variable rather than a constant, and its base is represented with constant value rather than a variable. Let \( f(x) = ab^x \) be an exponential function where “b” is its change factor (or a constant), the exponent “x” is the independent variable (or input of the function), the coefficient “a” is called the initial value of the function (or the y-intercept), and “f(x)” represent the dependent variable (or output of the function)
 
-\section*{3:}
-\begin{itemize}
-  \item ID			:FR3
-  \item TYPE		:Functional Requirement
-  \item VERSION		:1.0
-  \item DIFFICULTY	:Easy
-  \item DESCRIPTION	: Since many expressions with negative bases – like  $(–1)^3/2$  or  $(–4.2)^3/6$ – make no algebraic sense , and since a base of  0  leads to a trivial constant function, we usually add the following restriction to exponential functions: The base  b  in an exponential function must be positive.
-  \item RATIONALE   :b$>$0
-\end{itemize}
+\section*{\normalsize \textbf{DOMAIN:}}The domain is a set of all real numbers,R. where :\( b > 0 \) ,\( x > 0 \)
 
+\section*{\normalsize \textbf{CO DOMAIN}}The co-domain is also a set of all real numbers, R.
 
-
-
+\section*{\normalsize \textbf{CHARACTERISTICS}}
+Fig:1 Exponential functions defined by an equation of the form $ab^x$ are called exponential decay functions if the change factor “b” (fixed base value) is \( 0<b<1 \), or it is also called exponential growth functions if the change factor is \( b > 0 \) \newline
+Fig:2 The y-intercept is (0,a) and it is located at the initial value “a”. There is no x-intercept. The domain for an exponential decay function of this form is all real numbers and the range is \( y > 0 \)
+\section*{\normalsize \textbf{GRAPH}}
+\begin{figure}
+\graphicspath{ {./Function6/}}
+  \subfloat[Fig: 1]{\includegraphics[width=0.3\textwidth]{IMG_1640.jpg}\label{fig:f1}}
+  \hfill
+  \subfloat[Fig: 2]{\includegraphics[width=0.3\textwidth]{IMG_1641.jpg}\label{fig:f2}}
+  \caption{Representation of $ab^x$}
+\end{figure}
+\section*{\normalsize \textbf{REFERENCES}}
+https://www.cgc.edu/Academics/LearningCenter/Math/Documents/Exponential_Functions_Workshop.pdf
 \end{document}
