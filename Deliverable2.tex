@@ -1,0 +1,149 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontenc}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\usepackage{titling}
+\setlength{\topskip}{0mm}
+\setlength{\droptitle}{-8em} 
+\title{{\large\textbf{\normalsize PROBLEM 4: DEBUGGER - NetBeans IDE}}}
+\section*{{REPOSITORY DETAILS}}
+{{\normalsize https://github.com/ManushreeMallaraju/Manushree-SOEN\_6011\_Project}}
+ 
+\begin{document}
+\section*{{PROBLEM 4: DEBUGGER - NetBeans IDE}}
+
+NetBeans is an Integrated Development Environment(IDE) for Java. NetBeans ensure developers to develop application using modular Software components called 'Modules'. NetBeans runs on various Operating Systems, like Windows, macOS, Linux, Solaris. Netbeans IDE is one the first IDE developed to support the latest versions of JDK, Java EE and JavaFX.
+
+\section*{\normalsize Additional Features of NetBeans}
+
+$\bullet$~ In addition to Java Development, Netbeans also have some extensions of other Languages like PHP, C, C++, HTML5 and JavaScript.
+\\
+\\
+$\bullet$~ NetBeans IDE also offers many tolls for the web application Development.
+\\ These tools are also caled First Class tools for Java Web, enterprise, desktop, and mobile application development.
+\\
+\\
+$\bullet$~ Netbeans helps us to understand the and manage our applications, including some of the technologies involved with Maven.
+
+\section*{\normalsize Advantages of NetBeans}
+
+$\bullet$~ Netbeans have so many built-in plugins when compared to Eclipse.
+\\ For example: db connectors for PG and MySQL.
+\\
+\\
+$\bullet$~ The structure of the NetBeans IDE is well figured out.
+\\
+\\
+$\bullet$~ The structure of the NetBeans IDE is well figured out.
+\\
+\\
+$\bullet$~ NetBeans provides an easy User Interface, Swing GUI design tool through which we can design web pages through just dragging and dropping the Buttons, dropdownList and textboxes.
+\\
+\\
+$\bullet$~ NetBeans have an additional component of auto completed code and provides programmers a list of few fragments of code, through which developer can select from.
+
+\section*{\normalsize Disadvantages of NetBeans}
+$\bullet$~ NetBeans is a kind of slow to load on the Machine.
+\\
+$\bullet$~ The consumption of memory in NetBeans is relatively high when compared to other lighter IDE's
+\\
+$\bullet$~ Some advanced tools and plugins to be installed in NetBeans needs more effort.
+
+\clearpage
+
+\section*{\textbf{Efforts made to achieve the Quality Attributes } }
+
+$\bullet$~ \textbf{Correctness} : Checked for Syntax errors using the Checkstyle Beans, a plugin provided for NetBeans. Also checked Runtime errors using Debugger NetBeans IDE.
+\\
+\\$\bullet$~ \textbf{Efficient} : This is the ability of the software System, to fulfil the purpose of all possible utilization of necessary resources. Efficiency is achieved in the source code, through various values provided to the variable 'x'.\( f(x) = ab^x \). For each postiive, negative, decimal, real values for x, each part of the code is utilized.
+\\
+\\
+$\bullet$~ \textbf{Maintainable} : The main thing ensured in writing the source code is, code being clear. Also Using Netbeans IDE, the Java runtime got optimised. An example of unnecessary optimisation can be through avoiding Inbuilt functions, for constructing text. Also Java ensures to translate few operations to use automatically.
+\\
+\\
+$\bullet$~ \textbf{Robust} : As the value in double varies with few decimals where it can lead to erroneous data. These situations is handled in the source code by fixing the maximum decimal digits of the double type variable.
+\\
+\\
+$\bullet$~ \textbf{Usable} : Instead of repeatedly caling the main method to calculate the power of a number, I have splitted the code in two different methods, power() and nRoot(). Where main method calls these methods repeatedly, where the methods are reused.
+
+\clearpage
+
+\section*{{PROBLEM 4: CHECKSTYLE - CHECKSTYLE BEANS}}
+
+Checkstyle Beans is one of a development tool which ensure to help the programmers to write the Java Code that specifies to a coding standard. 
+\\
+\\   Checkstyle Beans automatically checks the coding standards of the Program, which literally reduces the Human effort to check each and every line of the code.
+\\
+\\
+Checkstyle Beans  can be used to check many parts of our source code. It can also find 'Design Patterns' such as: method design problems , class design problems, etc.
+\\
+\\
+It also has the ability to check formatting issues and code layout.
+\\
+
+\section*{\normalsize Advantages of CHECKSTYLE BEANS}
+
+$\bullet$~ Checkstyle Beans automates the checking of the code including the tab spaces given unnecessarily, curly braces closed in uneven format.
+\\
+\\
+$\bullet$~ Checkstyle Beans ensure closing of costly resources, such as Scanner Object, Db Object.
+\\
+\\
+$\bullet$~ Checkstyle Beans also ensure to define same type of variable in each line, instead of one single line.\\
+    
+    For example: Three variables of same type, double type should be defined in three different lines, which provides the developer a clear idea of the number of variables defined.
+\\
+\\
+$\bullet$~ Checkstyle Beans allows programmer to customize his/her own parameters 
+
+\section*{\normalsize Disadvantages of CHECKSTYLE BEANS}
+$\bullet$~ Checkstyle Beans follows a format of one particular Coding Standard which cannot be applicable for all types of Projects. 
+\\
+\\
+$\bullet$~ Projects developed can have its unique standard which violates the default coding standard of Checkstyle Beans.
+    
+    For example: Developer can have various tab spaces, which can be specified for each conditional statements that should be easily identifiable in re factoring.
+
+\clearpage
+
+\section*{{PROBLEM 6: JUNIT TESTING}}
+
+ \section *{\normalsize \textbf{ Changes from D1 to D2:}}\\
+ 
+For all the requirements mentioned in Problem 2:\\
+$\bullet$ As the two variables a and b are constants, So the values of them are fixed, i.e, $a = b = 2$ .
+\\
+\\
+$\bullet$ Only the value for variable 'x' is initialized at the run time, through user input. 
+\\
+\\
+$\bullet$ For Requirements 3: It was stated that 'Expressions with negative bases such as $(–3)^3/2$  or  $(–1.4)^2/5$ result in undefined values, the base b in an exponential function must be positive.' The value of base, b can be greater that or less than 1. The source code is designed to calculate both positive and negative values of 'b'.
+
+
+\section*{\normalsize Unit Test Cases for the Function: \( f(x) = ab^x \)}
+
+$\bullet$ Test Case 1: This satisfies with the requirement 1 of Problem 2. When  a = 0  or  b = 0  the function shell simplify to  y = f(x) = 0, so all the values should be greater than 1.
+But we need to have constant values for a and b, where $a= b = 2$ 
+\\
+\\
+$\bullet$ Test Case 2: This satisfies with the requirement 2 of Problem 2. But we need to have constant values for a and b, where $a= b = 2$. The value of base, b can be equal to 1. $b=1$ The source code is designed to calculate the power when 'b' is 1.
+\\
+\\
+$\bullet$ Test Case 3: This satisfies with the requirement 3 of Problem 2. But we need to have constant values for a and b, where $a= b = 2$. The value of base, b can be greater that or less than 1. The source code is designed to calculate both positive and negative values of 'b'.
+
+\section*{\normalsize References}
+
+http://infotech101.com/the-netbeans-ide-pros-cons/
+\\
+\\
+https://blog.sideci.com/an-overview-of-checkstyle-and-how-it-is-used-in-open-sourced-projects-8dc288f65fdb
+\\
+\\
+https://checkstyle.sourceforge.io/
+
+
+
+\end{document}
